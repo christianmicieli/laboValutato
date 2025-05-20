@@ -25,14 +25,14 @@ Buona analisi e buon lavoro!
 
 ### Setup
 
-Per clonare il repository in locale:
+- Per clonare il repository in locale:
 
 
 git clone https://github.com/christianmicieli/laboValutato.git
 
 cd laboValutato
 
-Per installare le dipendenze: 
+- Per installare le dipendenze: 
 
 npm install
 
@@ -41,16 +41,42 @@ npm install
 node index.js
 
 ---
-## TEST
+# TEST
 
 
 Il progetto utilizza Jest per i test unitari. Le funzioni di utilità in `stringUtils.js` sono completamente testate con una copertura del 100%.
 
 ### Eseguire i test
 
-Per eseguire i test unitari:
+- Per eseguire i test unitari:
 
 npm test
+
+# CI
+
+### Continuous Integration (CI) con GitHub Actions
+
+Abbiamo integrato un workflow di GitHub Actions per automatizzare l’esecuzione dei test unitari e la generazione del report di coverage ad ogni modifica sul branch main.
+
+### Scopo:
+- Assicurare che ogni modifica al codice sia testata automaticamente.
+- Monitorare la qualità del codice tramite il report di coverage.
+- Rendere facilmente accessibile il report HTML di coverage come artefatto del workflow.
+
+### Il workflow si attiva automaticamente su:
+- push sul branch main
+- pull request verso il branch main
+
+### Viene eseguito un job che:
+- Clona il repository
+- Configura Node.js con caching delle dipendenze npm
+- Installa le dipendenze con npm ci
+- Esegue i test con Jest includendo la generazione del report di coverage
+- Carica la cartella coverage/ come artefatto, contenente il report HTML completo
+
+### Visualizzazione del report di coverage
+
+Dopo l’esecuzione del workflow, è possibile scaricare il report di coverage in formato HTML direttamente dalla pagina Actions di GitHub, aprendo il file index.html presente nella cartella scaricata (coverage/lcov-report/index.html).
 
 
 *Suggerimento: Presta particolare attenzione ai requisiti dell'Esercizio 1 del laboratorio per completare e correggere questo README e gli altri file di configurazione.*
