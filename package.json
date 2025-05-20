@@ -1,12 +1,30 @@
 {
   "name": "labo-string",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Programma per manipolazione di stringhe: inversione, verifica palindromi, conteggio ricorrenze e troncamento",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js",
+    "test": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+"keywords": ["string", "labo", "cli", "nodejs", "manipolazione", "palindromo", "reverse", "truncate"],
+  "author": "Christian Micieli <Micieli843@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+      "jest": "^29.7.0"
+    },
+"repository": {
+  "type": "git",
+  "url": "https://github.com/christianmicieli/laboValutato"
+},
+"bugs": {
+  "url": "https://github.com/christianmicieli/laboValutato/issues"
+},
+
+  "engines": {
+      "node": ">=18.0.0"
+    }
 }
+
+
+
