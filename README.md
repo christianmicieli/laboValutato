@@ -27,6 +27,7 @@ Buona analisi e buon lavoro!
 
 Per clonare il repository in locale:
 
+
 git clone https://github.com/christianmicieli/laboValutato.git
 
 cd laboValutato
@@ -40,7 +41,16 @@ npm install
 node index.js
 
 ---
+## TEST
 
+
+Il progetto utilizza Jest per i test unitari. Le funzioni di utilità in `stringUtils.js` sono completamente testate con una copertura del 100%.
+
+### Eseguire i test
+
+Per eseguire i test unitari:
+
+npm test
 
 
 *Suggerimento: Presta particolare attenzione ai requisiti dell'Esercizio 1 del laboratorio per completare e correggere questo README e gli altri file di configurazione.*
