@@ -23,8 +23,24 @@ Buona analisi e buon lavoro!
 
 ## Installazione e Avvio
 
-*(Questa sezione dovrà essere completata dallo studente come parte dell'Esercizio 1, includendo i comandi per installare le dipendenze ed eseguire l'applicazione e i test).*
+### Setup
+
+Per clonare il repository in locale:
+
+git clone https://github.com/christianmicieli/laboValutato.git
+
+cd laboValutato
+
+Per installare le dipendenze: 
+
+npm install
+
+### Avvio 
+
+node index.js
 
 ---
+
+
 
 *Suggerimento: Presta particolare attenzione ai requisiti dell'Esercizio 1 del laboratorio per completare e correggere questo README e gli altri file di configurazione.*
