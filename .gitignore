@@ -1,19 +1,26 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
+# Node Modules
+node_modules/
+
+# Build output
+coverage/
+
+#logs
+logs/
+*.log
+
+# Optional npm cache directory
+.npm/
 
 # Environments
 .env
-.venv
-env/
-venv/
 
 # Distribution / packaging
 build/
 dist/
-*.egg-info/
 
 # Unit test / coverage reports
 .coverage
-.pytest_cache/
-htmlcov/
+
+#IDEs
+.vscode/
+.idea/
